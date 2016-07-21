@@ -1,0 +1,33 @@
+var user = prompt( "You meet a strong monster inside the cave. What do you do? \
+                    You FIGHT against it or you TALK to him you RUN?").toUpperCase();
+var attack = true;
+var defense=true;
+var talk=false;
+  
+                    
+ switch(user){
+     case 'FIGHT':
+         if (attack && defense){
+             console.log( "The attack is successful");}
+         else{
+             console.log( "Your attack is missed, you have to defense yourself");}
+         
+         console.log("You fight with your sword and you try to hurt the monster");
+         break;
+         
+    case 'TALK':
+        if (defense || talk ){
+            console.log( "You try to talk with the monster behind you shield");}
+            
+        else {
+            console.log( "The monster look at you...waiting");}
+            
+        console.log(" You ask the monster to allow you to pass");
+        break;
+        
+    case 'RUN':
+        console.log("You run to the exit of the cave");
+        break;
+        
+    default:
+        console.log("You don't do anything and the monster attacks you");}

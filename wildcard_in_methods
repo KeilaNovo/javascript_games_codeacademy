@@ -27,4 +27,4 @@ susan.age = 25;
 susan.setAge = setAge;
 
 // here, update Susan's age to 35 using the method
-susan.setAged(35);
+susan.setAge(35);

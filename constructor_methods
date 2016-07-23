@@ -1,20 +1,18 @@
 CONSTRUCTOR WITH METHODS
 ========================
-
-function Person(name,age) {
-  this.name = name;
-  this.age = age;
-  this.species = "Homo Sapiens";
+function Rectangle(height, width) {
+  this.height = height;
+  this.width = width;
+  this.calcArea = function() {
+      return this.height * this.width;
+  };
+  // put our perimeter function here!
+  this.calcPerimeter = function () {
+      return 2*this.height + 2*this.width;}
 }
 
-var sally = new Person ("Sally Bowles", 39);
-var holden = new Person ("Holden Caulfield", 16);
-console.log("sally's species is " + sally.species + " and she is " + sally.age );
-console.log("holden's species is " + holden.species + " and he is " + holden.age );
+var rex = new Rectangle(7,3);
+var area = rex.calcArea();
+var perimeter = rex.calcPerimeter();
 
 
-
-//We use the function Person like a object constructor (this is the general Object constructor: var bob = new Object()where the
-// the properties are defined for example : bob.age = 20;). 
-//In this code, inside the Person function, we define one of the properties, so when we log it in the console all the persons
-//we created before, the propertie SPECIES will be "Homo Sapiens"

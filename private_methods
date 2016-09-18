@@ -1,0 +1,25 @@
+function Person(first,last,age) {
+   this.firstname = first;
+   this.lastname = last;
+   this.age = age;
+   var bankBalance = 7500;
+  
+   var returnBalance = function() {
+      return bankBalance;
+   };
+       
+   // create the new function here
+    this.askTeller = function(){
+       return returnBalance;
+    };
+}
+var john = new Person('John','Smith',30);
+console.log(john.returnBalance);
+var myBalanceMethod = john.askTeller();
+var myBalance = myBalanceMethod();
+console.log(myBalance);
+
+
+//Here we have a private method, that is make putting "var" at the beggining of the method, when we declare it.
+//To make it public, we should make a public method that calls the private one, so we have to declare our method with "this."
+//to link it to the class defined above.

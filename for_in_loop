@@ -11,3 +11,10 @@ for( var property in nyc) {
     
 //With this loop we can print all the properties of our object.
 //When we put "property", you can set another word to make the loop
+
+
+
+for ( var x in nyc){
+    console.log(nyc[x])}
+    
+//With the second loop, we print all the values of the properties of our object

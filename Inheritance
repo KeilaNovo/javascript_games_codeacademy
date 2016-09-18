@@ -1,0 +1,22 @@
+// the Animal class and sayName method
+function Animal(name, numLegs) {
+    this.name = name;
+    this.numLegs = numLegs;
+}
+Animal.prototype.sayName = function() {
+    console.log("Hi my name is " + this.name);
+};
+
+// define new class,Penguin and we add a specific property of the penguins but takes the same properties set in Animal class
+//that is more general
+function Penguin(name) {
+    this.name = name;
+    this.numLegs = 2; 
+    };
+
+// set its prototype to be a new instance of Animal
+Penguin.prototype = new Animal();
+
+//We can call the method sayName that is defined in the Animal class. With inheritance we can take that method in the Pengui class
+var penguin = new Penguin ("penguin");
+penguin.sayName();

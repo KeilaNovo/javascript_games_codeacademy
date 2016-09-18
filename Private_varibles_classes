@@ -1,0 +1,15 @@
+function Person(first,last,age) {
+   this.firstname = first;
+   this.lastname = last;
+   this.age = age;
+   var bankBalance = 7500;
+}
+
+// create your Person 
+var john = new Person("John",23);
+
+// try to print his bankBalance
+console.log(john.bankBalance);
+
+
+//When we want to create a private variable, inside of Person class we declare it with "var" not with "this."

@@ -13,3 +13,25 @@ console.log(john.bankBalance);
 
 
 //When we want to create a private variable, inside of Person class we declare it with "var" not with "this."
+
+//How we access to them:
+
+function Person(first,last,age) {
+   this.firstname = first;
+   this.lastname = last;
+   this.age = age;
+   var bankBalance = 7500;
+  
+   this.getBalance = function() {
+      return bankBalance;
+   };
+}
+
+var john = new Person('John','Smith',30);
+console.log(john.bankBalance);
+
+// create a new variable that calls getBalance()
+var myBalance = john.getBalance();
+console.log(myBalance);
+
+//We still obtain in the first print "undefined", but in the second one, we will have printed the information we need.

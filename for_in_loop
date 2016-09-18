@@ -1,0 +1,13 @@
+var nyc = {
+    fullName: "New York City",
+    mayor: "Bill de Blasio",
+    population: 8000000,
+    boroughs: 5
+};
+
+for( var property in nyc) {
+    console.log(property);}
+    
+    
+//With this loop we can print all the properties of our object.
+//When we put "property", you can set another word to make the loop

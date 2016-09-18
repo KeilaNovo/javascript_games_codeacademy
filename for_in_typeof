@@ -1,0 +1,15 @@
+var languages = {
+    english: "Hello!",
+    french: "Bonjour!",
+    notALanguage: 4,
+    spanish: "Hola!"
+};
+
+// print hello in the 3 different languages
+for(var x in languages) {
+    if (typeof languages[x] === "string"){
+    console.log(languages[x]);};};
+    
+    
+//With typeof we can select the type of result we want to print out, a string or a number or a object.
+//Then we use the for-in loop to do it.

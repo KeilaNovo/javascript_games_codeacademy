@@ -1,4 +1,7 @@
-# javascript_games_codeacademy
+# javascript_basic_exercises
+
+In this repositorie you can find some basic exercises of Javascript coding, so you can improve your coding skills.
+
 
 Here we find some clarification of the code:
 

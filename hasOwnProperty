@@ -1,0 +1,15 @@
+var suitcase = {
+    shirt: "Hawaiian"
+};
+
+
+if (suitcase.hasOwnProperty("short")){
+console.log(suitcase.shorts);}
+
+else {
+    suitcase.shorts="Blue";
+    console.log(suitcase.shorts)}
+    
+    
+//This an invaluable tool( hasOwnProperty) when we work with objects.
+//With this code we evalute if the "shorts" property is defined in the object
